@@ -1,12 +1,18 @@
 #!/usr/bin/pyhton3
 """Books Model"""
-from Models.parent_model import Parentmodel
+from Models.parent_model import Parentmodel, Base
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship
+from os import getenv
+import Models
+from sqlalchemy import Column, String, Integer, Float, ForeignKey
 
-
-class Books(Parentmodel):
-    title = ""
-    Author = ""
-    Catergory_name = ""
-    catergory_number = 0
-    Book_description = ""
-    ref_link = ""
+class Books(Parentmodel, Base):
+    """collection of Books"""
+    __tablename__ = 'Books'
+    title = Column(String(128), nullable=False)
+    Author = Column(String(128), nullable=False)
+    Catergory_name = Column(String(128), nullable=False)
+    catergory_number = Column(Integer, ForeignKey('catergory.id'), nullable=False, default=0)
+    Book_description = Column(String(1024), nullable=True)
+    ref_link = Column(String(128), nullable=False)
