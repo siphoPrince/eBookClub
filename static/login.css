@@ -8,12 +8,12 @@ body {
 }
 
 .login-container {
-    margin-top: 50px;
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+	width: 300px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+	background: #fff;
+	padding: 20px;
+	margin: 8% auto 0;
+	text-align: center;
 }
 
 h2 {
@@ -28,9 +28,9 @@ a{
 
 input[type="text"],
 input[type="password"] {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 15px;
     border: 1px solid #dddddd;
     border-radius: 4px;
 }

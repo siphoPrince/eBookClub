@@ -1,10 +1,38 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+body {
     align-items: center;
     height: 100vh;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding-top: 40px;
     font-family: Arial, sans-serif;
+}
+
+.login-container {
+	width: 300px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+	background: #fff;
+	padding: 20px;
+	margin: 8% auto 0;
+	text-align: center;
+}
+
+h2 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
 }
 
 nav {
@@ -30,48 +58,10 @@ nav a {
     color: #e95444;
   }
 
+
   nav a:visited{
     color: yellow;
   }
-
-  h3 {
-    margin: 0;
-    font-size: 24px;
-  }
-
-
-.registration-form{
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 40px;
-}
-
-h2{
-    color: #333333;
-    margin-bottom: 20px;
-}
-
-a{
-    text-decoration: none;
-    color: #333333;
-}
-
-a:hover{
-    color: #3e8e41;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="Email"],
-input[type="number"] {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #dddddd;
-    border-radius: 4px;
-}
 
 button {
     width: 100%;
