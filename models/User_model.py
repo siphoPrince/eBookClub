@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """User model"""
-from Models.parent_model import Parentmodel, Base
+from models.parent_model import Parentmodel, Base
 from sqlalchemy import Column, Integer, String, ForeignKey
-import Models
+import models
 from flask_login import UserMixin
 
 class User(Parentmodel, Base, UserMixin):
@@ -12,7 +12,7 @@ class User(Parentmodel, Base, UserMixin):
     surname = Column(String(128), nullable=True)
     email = Column(String(128), nullable=True, unique=True)
     password = Column(String(128), nullable=True)
-    reviews = relationship("Reviews")
+    
     def __init__(self, *args, **kwargs):
         """initializes """
         super().__init__(*args, **kwargs)

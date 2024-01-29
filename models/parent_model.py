@@ -6,7 +6,7 @@ from datetime import datetime
 import sqlalchemy
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, String, DateTime
-import Models
+import models
 
 Base = declarative_base()
 
@@ -20,25 +20,25 @@ class Parentmodel:
     updated_at = Column(DateTime, default=datetime.utcnow(),nullable=False)
 
     def __init__(self, *args, **kwargs):
-    """initialize attr"""
-    if not kwargs:
-    self.id = str(uuid4())
-    self.created_at = datetime.now()
-    self.updated_at = datetime.now()
-    else:
-         if 'id' in kwargs:
+        """initialize attr"""
+        if not kwargs:
+            self.id = str(uuid4())
+            self.created_at = datetime.now()
+            self.updated_at = datetime.now()
+        else:
+            if 'id' in kwargs:
                 self.id = kwargs['id']
-         else:
+            else:
                 self.id = str(uuid4())
-         if 'created_at' in kwargs:
+            if 'created_at' in kwargs:
                 self.created_at = datetime.strptime(kwargs['created_at'],
                                                     '%Y-%m-%dT%H:%M:%S.%f')
-         else:
+            else:
                 self.created_at = datetime.now()
-         if 'updated_at' in kwargs:
+            if 'updated_at' in kwargs:
                 self.updated_at = datetime.strptime(kwargs['updated_at'],
                                                     '%Y-%m-%dT%H:%M:%S.%f')
-         else:
+            else:
                 self.updated_at = datetime.now()
 
     def __str__(self):

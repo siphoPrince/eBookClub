@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Category model"""
-from Models.parent_model import Base
+from models.parent_model import Base
 from sqlalchemy import Column, String, Integer, Float
 from sqlalchemy.ext.declarative import declarative_base
 

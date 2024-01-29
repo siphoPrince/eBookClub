@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Reviews models"""
-from Models.parent_model import Parentmodel, Base
+from models.parent_model import Parentmodel, Base
 from sqlalchemy import Column, String, Text, ForeignKey, Integer
 
 
