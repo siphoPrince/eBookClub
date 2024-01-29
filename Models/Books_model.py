@@ -16,3 +16,7 @@ class Books(Parentmodel, Base):
     catergory_number = Column(Integer, ForeignKey('catergory.id'), nullable=False, default=0)
     Book_description = Column(String(1024), nullable=True)
     ref_link = Column(String(128), nullable=False)
+
+    def __init__(self, *args, **kwargs):
+        """initializes """
+        super().__init__(*args, **kwargs)

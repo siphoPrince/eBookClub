@@ -12,3 +12,7 @@ class Category(Base):
     __tablename__ = 'Category'
     category_number = Column(Integer, primary_key =True, nullable=False, default=0)
     category_name = Column(String(128), nullable=False)
+
+    def __init__(self, *args, **kwargs):
+        """initializes """
+        super().__init__(*args, **kwargs)
