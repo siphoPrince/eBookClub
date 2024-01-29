@@ -1,8 +1,12 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, Blueprint, render_template, request, redirect, url_for
+from Models.User_model import User
+from werkzeug.security import generate_password_hash, check_password_hash
+from Models import storage
+from flask_login import login_user, login_required, logout_user, current_user
 
-app = Flask(__name__)
+app_login = Blueprint('app_login', __name__)
 
-# Simple hardcoded user credentials (replace with a proper database in a real-world application)
+
 users = {
     "sipho": "123"
 }
