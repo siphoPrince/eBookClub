@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 """Storage system"""
-import models
-from models.parent_model import Parentmodel, Base
+from eBookClub import models
+from eBookClub.models.parent_model import Parentmodel, Base
 import sqlalchemy
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 from os import getenv
-from models.Review_model import Reviews
-from models.User_model import User
-from models.Category_model import Category
-from models.Books_model import Books
+from eBookClub.models.Review_model import Reviews
+from eBookClub.models.User_model import User
+from eBookClub.models.Category_model import Category
+from eBookClub.models.Books_model import Books
 
 
 class Data_storage:

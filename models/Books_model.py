@@ -1,10 +1,10 @@
 #!/usr/bin/pyhton3
 """Books Model"""
-from models.parent_model import Parentmodel, Base
+from eBookClub.models.parent_model import Parentmodel, Base
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from os import getenv
-import models
+from eBookClub import models
 from sqlalchemy import Column, String, Integer, Float, ForeignKey
 
 class Books(Parentmodel, Base):

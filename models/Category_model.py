@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Category model"""
-from models.parent_model import Parentmodel, Base
+from eBookClub.models.parent_model import Parentmodel, Base
 from sqlalchemy import Column, String, Integer, Float
 from sqlalchemy.ext.declarative import declarative_base
 
