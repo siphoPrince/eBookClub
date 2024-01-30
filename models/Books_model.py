@@ -10,10 +10,10 @@ from sqlalchemy import Column, String, Integer, Float, ForeignKey
 class Books(Parentmodel, Base):
     """collection of Books"""
     __tablename__ = 'Books'
-    title = Column(String(128), nullable=False)
-    Author = Column(String(128), nullable=False)
+    title = Column(String(128))
+    Author = Column(String(128))
     Catergory_name = Column(String(128), nullable=False)
-    catergory_number = Column(Integer, ForeignKey('catergory.id'), nullable=False, default=0)
+    #catergory_number = Column(String(60), ForeignKey('catergory.id'), nullable=False)
     Book_description = Column(String(1024), nullable=True)
     ref_link = Column(String(128), nullable=False)
 

@@ -29,7 +29,7 @@ class Data_storage:
     def data(self, cls=None):
         """returns ojects depending on class
         or  all  data"""
-        classes = [Books, Review, User, Category]
+        classes = [Books, Reviews, User, Category]
         database = {}
         if cls is not None:
             query = self.__session.query(cls).all()

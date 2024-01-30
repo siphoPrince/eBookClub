@@ -7,10 +7,10 @@ from sqlalchemy import Column, String, Text, ForeignKey, Integer
 class Reviews(Parentmodel, Base):
     """reveiws class"""
     __tablename__ = 'Reviews'
-    Book_id = Column(String(60), ForeignKey("Books.id"), nullable=False)
-    Bookname = Column(String(60), ForeignKey("Books.title"), nullable=False)
-    user_id = Column(String(60), ForeignKey("User.id"), nullable=False)
-    username = Column(String(60), ForeignKey("User.name"), nullable=False)
+    #Book_id = Column(String(60), ForeignKey("Books.id"), nullable=False)
+    #Bookname = Column(String(60), ForeignKey("Books.title"), nullable=False)
+    #user_id = Column(String(60), ForeignKey("User.id"), nullable=False)
+    #username = Column(String(60), ForeignKey("User.name"), nullable=False)
     Review_text = Column(Text(1024), nullable=False)
     rating = Column(Integer, nullable=False, default=0)
 
