@@ -26,7 +26,12 @@ eBookClub is an online book club platform that brings book enthusiasts together 
 
 4. **Review & Comment**: Share your thoughts by leaving a review. Engage with other readers through comments and discussions. The more you participate, the richer your eBookClub experience becomes.
 
-5. **Personalize**: Customize your profile to reflect your reading preferences. Receive tailored book recommendations and connect with users who share your literary tastes.
+   ##authors --
+   sipho mabirimise - mabirimisesipho@gmail.com
+   lerato mawasha - leratomawasha0@gmail.com
+   amukelani mabirimise - awmabirimise@gmail.com
+
+6. **Personalize**: Customize your profile to reflect your reading preferences. Receive tailored book recommendations and connect with users who share your literary tastes.
 
 ## Get Involved
 
